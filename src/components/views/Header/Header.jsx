@@ -14,16 +14,16 @@ const Header = () => {
         <nav>
         <ul className={"listaLinks"}>
           <li>
-            <Link to='/'>Home</Link>
+            <Link to='/'className={"link"}>Home</Link>
           </li>
           <li>
-          <Link to='/Filmes'>Filmes</Link>
+          <Link to='/Filmes'className={"link"}>Filmes</Link>
           </li>  
           <li>
-          <Link to='/VendaOnline'>Venda Online</Link>
+          <Link to='/VendasOnline'className={"link"}>Venda Online</Link>
           </li> 
           <li>
-          <Link to='/Login'>Login</Link>
+          <Link to='/Login'className={"link"}>Login</Link>
           </li> 
           </ul>
           </nav>

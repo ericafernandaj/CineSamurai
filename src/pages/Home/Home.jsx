@@ -1,12 +1,13 @@
 import React from 'react'
 import Header from '../../components/views/Header/Header'
-
+import{StyleHome} from '../Home/home.style'
 
 const Home = () => {
       return (
-    <div>
+    <StyleHome>
         <Header/>
-    </div>
+        <h1>Home</h1>
+    </StyleHome>
   )
 }
 
