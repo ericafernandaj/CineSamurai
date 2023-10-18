@@ -15,7 +15,7 @@ const Bannercine1 = () => {
         <StyleBannerCine1>
             <section className='initBox'>
                 <div className='buttonBox'>
-                    <h1>Cine Samurai Curitiba</h1>
+                    <h1>🍿 Cine Samurai Curitiba</h1>
                     <Button texto='Programação' variant='primary' />
                     <Button texto='Preços' variant='primary' />
                 </div>
