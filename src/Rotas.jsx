@@ -7,7 +7,7 @@ import { GlobalStyle } from './style/GlobalStyle'
 import { tema } from './style/theme'
 import { ThemeProvider } from 'styled-components'
 import VendasOnline from './pages/VendasOnline/VendasOnline'
-
+import Precos from './pages/Precos/Precos'
 
 const Rotas = () => {
   return (
@@ -20,6 +20,7 @@ const Rotas = () => {
           <Route path='/Filmes' element={<Filmes />} />
           <Route path='/VendasOnline' element={<VendasOnline />} />
           <Route path='/Login' element={<Login />} />
+          <Route path='/Precos' element={<Precos/>} />
         </Routes>
 
       </ThemeProvider>

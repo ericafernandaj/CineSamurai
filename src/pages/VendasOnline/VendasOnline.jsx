@@ -1,11 +1,11 @@
-import React from 'react'
 import Header from '../../components/views/Header/Header'
 import Footer from '../../components/views/Footer/Footer'
+import BannerIngresso from '../../components/views/Banners/BannerIngresso/BannerIngresso'
 const VendasOnline = () => {
   return (
     <div>
         <Header/>
-        <h1>VendasOnline</h1>
+        <BannerIngresso/>
         <Footer/>
         </div>
   )
