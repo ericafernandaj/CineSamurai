@@ -1,6 +1,6 @@
 export const tema = {
     blue900: '#263238',
-    yellow: '#ffe772',
+    yellow: '#d266ff',
     blue500: '#101728',
     blue200: '#A8DADC',
     blue100: '#D0E8E8',

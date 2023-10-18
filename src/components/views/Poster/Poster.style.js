@@ -38,7 +38,7 @@ div{
     font-size: 1.5rem;
 }
 strong{
-    color: #ffce2b;
+    color: #d266ff;
 
 }
 
