@@ -8,15 +8,22 @@ import Poster from '../../Poster/Poster';
 import figurapromo from '../../../../../public/figurapromocao.png';
 import Figurameia from '../../../../../public/meia.svg';
 import FaixaEtaria from "../../../../../public/faixaEtaria.svg";
+import { useNavigate } from 'react-router-dom';
 const Bannercine1 = () => {
-
+    const navigate = useNavigate();
+const handleClick = () => {
+    navigate('/Filmes');
+  };
+  const handlePreco = () => {
+      navigate('/Precos');
+    };
     return (
         <StyleBannerCine1>
             <section className='initBox'>
                 <div className='buttonBox'>
                     <h1>🍿 Cine Samurai Curitiba</h1>
-                    <Button texto='Programação' variant='primary' />
-                    <Button texto='Preços' variant='primary' />
+                    <Button texto='Programação' variant='primary' onClick={handleClick}/>
+                    <Button texto='Preços' variant='primary' onClick={handlePreco}/>
                 </div>
                 <h2>Em Breve</h2>
             </section>

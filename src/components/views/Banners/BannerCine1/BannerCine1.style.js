@@ -49,8 +49,6 @@ margin-top: 20px;
 
 h1{
 color:white;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif;
 font-family: 'Work Sans', sans-serif;
 }
 `
