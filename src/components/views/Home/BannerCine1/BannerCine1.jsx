@@ -1,13 +1,14 @@
 import { StyleBannerCine1 } from './Bannercine1.style'
 import Button from '../../../common/Button/Button'
-import MinhaImagen from '../../../../../public/filme1.png'
+import ImagemFreira from '../../../../../public/filme1.png'
 import { Alarm } from "@phosphor-icons/react";
 import { tema } from '../../../../style/theme';
 import Filme2 from '../../../../../public/filme2.png'
-import Filme3 from '../../../../../public/Filme3.png'
+import Filme3 from '../../../../../public/filmeCachorro.jpg'
 import Poster from '../../Poster/Poster';
 import figurapromo from '../../../../../public/figurapromocao.png'
-import Figurameia from '../../../../../public/figurapagameia.png'
+import Figurameia from '../../../../../public/meia.svg'
+import FaixaEtaria from "../../../../../public/faixaEtaria.svg"
 const Bannercine1 = () => {
 
     return (
@@ -22,7 +23,7 @@ const Bannercine1 = () => {
             </section>
             <section className='posterBox'>
                 <Poster
-                    imagem={MinhaImagen}
+                    imagem={ImagemFreira}
                     color={tema.white50}
                     titulo='A Freira 2'
                     sinopse={`A Freira 2 é o segundo capítulo da história de A Freira (2018), 
@@ -36,6 +37,7 @@ const Bannercine1 = () => {
                  Agora, na continuação, anos após os acontecimentos do primeiro filme, um padre é assassinado e parece que o mal está se espalhando por toda a região. 
                  Novamente acompanhamos a Irmã Irene quando, após pensar ter escapado por pouco de Valak, a entidade demoníaca, ela é forçada a enfrentar o poderoso e macabro inimigo mais uma vez.
                 `}
+                    faixa={FaixaEtaria}
 
                 />
                 <Poster
@@ -49,6 +51,7 @@ const Bannercine1 = () => {
                  Mas quando Angela e sua amiga Katherine desaparecem na floresta e retornam três dias depois sem memória do que aconteceu com elas, 
                  isso desencadeia uma série de eventos que obrigará Victor a confrontar o mal e, 
                  em seu terror e desespero, buscar a única pessoa viva que testemunhou algo parecido antes: Chris MacNeil. Baseado no best-seller de William Peter Blatty.`}
+                 faixa={FaixaEtaria}
 
                 />
                 <Poster
@@ -60,26 +63,31 @@ const Bannercine1 = () => {
                  seu antigo dono. Em sua nova e triste vida, os caminhos do animal e de uma gangue de vira-latas liderada por um Boston Terrier acabam se cruzando,
                   e o grupo começa uma improvável amizade. Na verdade, ainda vão mais além: os cães se unem para levar Reggie de volta pra casa para fazer Doug pagar pelo que fez. Com Sofía Vergara, 
                   Jamie Foxx, Isla Fisher e Josh Gad.`}
+                 faixa={FaixaEtaria}
+
 
                 />
 
             </section>
             <section className='cardPromocao'>
-                <picture><img src={figurapromo} alt="" /></picture>
-                <div className='primeiroBloco'>
-                    <h2>Quem Paga</h2>
-                    <picture ><img src={Figurameia} alt="" /></picture>
-                    <h2>?</h2>
-                </div>
-                <div className='segundoBloco'>
-                    <ul>
-                        <li>Estudantes</li>
-                        <li>Idosos</li>
-                        <li>Professores</li>
-                        <li>Portadores de deficiência</li>
-                        <li>Doador de sangue</li>
-                    </ul>
-                </div>
+                <picture><img className="pipocaMeia" src={figurapromo} alt="" /></picture>
+                
+
+                    <div className='primeiroBloco'>
+                        <h2 className="tituloBloco">Quem Paga</h2>
+                        <picture ><img className="meia" src={Figurameia} alt="" /></picture>
+                        <h2>?</h2>
+                    </div>
+                    <div className='segundoBloco'>
+                        <ul>
+                            <li>Estudantes</li>
+                            <li>Idosos</li>
+                            <li>Professores</li>
+                            <li>Portadores de deficiência</li>
+                            <li>Doador de sangue</li>
+                        </ul>
+                    </div>
+                
             </section>
 
         </StyleBannerCine1>
