@@ -20,7 +20,20 @@ margin-top: 20px;
     align-items: center;
     width: 100%;
 }
-
+img{
+    width: 50%;
+}
+.cardPromocao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border:solid white;
+    width: 100%;
+}
+.primeiroBloco{
+    display: flex;
+    
+}
 h1{
 color:white;
 font-family: 'Montserrat', sans-serif;

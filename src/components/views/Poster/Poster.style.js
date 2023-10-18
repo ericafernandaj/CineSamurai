@@ -10,7 +10,7 @@ color: rgb(247,247,247);
 margin: 20px 0;
 picture{
     width: 30%;
-    img{
+    .imagem{
         width: 100%;
         border-radius: 10px;
     }

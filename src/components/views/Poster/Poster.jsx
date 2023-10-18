@@ -4,7 +4,7 @@ const Poster = ({imagem,color,titulo,sinopse}) => {
     return (
         <StylePoster>
             <picture>
-                <img src={imagem} alt='Poster Do Filme'/>
+                <img className="imagem" src={imagem} alt='Poster Do Filme'/>
             </picture>
             <div>
                 <h2>{titulo}</h2>

@@ -6,6 +6,8 @@ import { tema } from '../../../../style/theme';
 import Filme2 from '../../../../../public/filme2.png'
 import Filme3 from '../../../../../public/Filme3.png'
 import Poster from '../../Poster/Poster';
+import figurapromo from '../../../../../public/figurapromocao.png'
+import Figurameia from '../../../../../public/figurapagameia.png'
 const Bannercine1 = () => {
 
   return (
@@ -60,10 +62,33 @@ const Bannercine1 = () => {
                   Jamie Foxx, Isla Fisher e Josh Gad.`}
                 
             />
+            
             </section>
-
+            <section className='cardPromocao'>
+             <picture><img src={figurapromo} alt="" /></picture>  
+             <div className='primeiroBloco'>
+             <h2>Quem Paga</h2>
+             <picture ><img src={Figurameia} alt="" /></picture>
+             <h2>?</h2>
+             </div> 
+             <div className='segundoBloco'>
+            <ul>
+                <li>Estudantes</li>
+                <li>Idosos</li>
+                <li>Professores</li>
+                <li>Portadores de deficiência</li>
+                <li>Doador de sangue</li>
+            </ul>
+             </div>
+            </section>
+            
     </StyleBannerCine1>
   )
 }
+
+
+
+
+
 
 export default Bannercine1
