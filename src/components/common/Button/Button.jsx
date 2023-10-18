@@ -28,7 +28,7 @@ const StyleButton = styled.button`
 
 const PrimaryButton = styled(StyleButton)`
   width: ${props => props.width ? props.width : 'fit-content'};
-  background: ${(props) => props.theme.yellow700};
+  background: ${(props) => props.theme.yellow};
   border: solid #101728 ; 
   color: ${(props) => props.theme.blue500};
   margin-right: 10px;
