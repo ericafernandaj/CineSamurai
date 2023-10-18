@@ -34,7 +34,7 @@ nav a{
 }
 
 .link:hover{
-    color:#9333c7;
+    color:#d266ff;
     transition:.3s;    
 }
 `
