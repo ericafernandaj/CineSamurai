@@ -33,10 +33,10 @@ const PrimaryButton = styled(StyleButton)`
   color: ${(props) => props.theme.blue500};
   margin-right: 10px;
   font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Work Sans', sans-serif;
+  font-size:1rem;
+  cursor: pointer;
   :hover{
-    background-color: ${(props) => props.theme.white20};
+    background-color: ${(props) => props.theme.white200};
   }
 `
 const SecondaryButton = styled(StyleButton)`
