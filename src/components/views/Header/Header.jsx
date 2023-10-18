@@ -1,4 +1,3 @@
-import React from 'react'
 import MinhaImagem from '../../../../public/figuracinesamurai.png'
 import {StyleHeader} from './Header.Style'
 import { Link } from 'react-router-dom'

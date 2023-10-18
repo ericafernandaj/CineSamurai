@@ -28,20 +28,20 @@ const StyleButton = styled.button`
 
 const PrimaryButton = styled(StyleButton)`
   width: ${props => props.width ? props.width : 'fit-content'};
-   background: ${(props) => props.theme.yellow700};
-   border: solid #101728 ; 
-   color: ${(props) => props.theme.blue500};
-   margin-right: 10px;
-   font-family: 'Montserrat', sans-serif;
+  background: ${(props) => props.theme.yellow700};
+  border: solid #101728 ; 
+  color: ${(props) => props.theme.blue500};
+  margin-right: 10px;
+  font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Work Sans', sans-serif;
-   :hover{
+  :hover{
     background-color: ${(props) => props.theme.white20};
   }
 `
 const SecondaryButton = styled(StyleButton)`
-   background: transparent;
-   border: 1px solid ${(props) => props.theme.blue700}; 
-   color: ${(props) => props.theme.yellow700};
+  background: transparent;
+  border: 1px solid ${(props) => props.theme.blue700}; 
+  color: ${(props) => props.theme.yellow700};
 `
 
