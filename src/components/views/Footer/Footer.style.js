@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const StyleFooter = styled.footer `
-background-color: black;
+background-color:rgb(27,27,27);
 height: 20vh;
-color: white;
+color:rgb(247,247,247);
 display: flex;
 
 .rodape{

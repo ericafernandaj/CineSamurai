@@ -12,7 +12,7 @@ height: 34vh;
 display: flex;
 justify-content: space-around;
 list-style-type: none;
-background-color:rgb(2, 41, 99) ;
+background-color:rgba(135,206,250,0.10) ;
 
 
 }

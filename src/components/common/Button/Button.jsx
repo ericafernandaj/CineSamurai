@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 const Button = ({ texto, variant, width, onClick }) => {
   return (
     <>
@@ -45,3 +44,4 @@ const SecondaryButton = styled(StyleButton)`
    border: 1px solid ${(props) => props.theme.blue700}; 
    color: ${(props) => props.theme.yellow700};
 `
+
