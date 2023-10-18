@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <StyleHeader>
-        <picture className='Logo'>
+        <picture className='logo'>
           <img src={MinhaImagem} alt="" />
         </picture>
         <nav>
