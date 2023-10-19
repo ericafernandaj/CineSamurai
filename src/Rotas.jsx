@@ -9,6 +9,7 @@ import { ThemeProvider } from 'styled-components'
 import VendasOnline from './pages/VendasOnline/VendasOnline'
 import Precos from './pages/Precos/Precos'
 import Cadastro from './pages/Cadastro/Cadastro'
+import Poltrona from './pages/Poltrona/Poltrona'
 const Rotas = () => {
   return (
 
@@ -22,6 +23,7 @@ const Rotas = () => {
           <Route path='/Login' element={<Login />} />
           <Route path='/Precos' element={<Precos/>} />
           <Route path='/Cadastro' element={<Cadastro/>} />
+          <Route path ='/Poltrona' element={<Poltrona/>} />
         </Routes>
 
       </ThemeProvider>
