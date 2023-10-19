@@ -1,4 +1,3 @@
-import React from 'react'
 import Header from '../../components/views/Header/Header'
 import{StyleHome} from '../Home/home.style'
 import Footer from '../../components/views/Footer/Footer'
