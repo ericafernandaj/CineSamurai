@@ -1,11 +1,13 @@
-import React from 'react'
+import BannerLogin from '../../components/views/Banners/BannerLogin/BannerLogin'
 import Header from '../../components/views/Header/Header'
 import Footer from '../../components/views/Footer/Footer'
+
 const Login = () => {
   return (
     <div>
         <Header/>
-        <h1>Login</h1>
+        <BannerLogin/>
+
         <Footer/>
         </div>
   )
