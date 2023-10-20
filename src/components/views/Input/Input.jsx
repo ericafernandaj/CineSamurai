@@ -1,17 +1,27 @@
-import styled from "styled-components"
+import React from "react"
+import { StyleInput } from "./input.styles"
+import { tema } from "../../../style/theme";
 
-const Input = ({text,placeholder})=> {
+const Input = ({ placeholder, hasError, isValid, required, name, type, value, onChange }) => {
+  const variantes = {
+    error: `2px solid ${tema.crimson700}`,
+    valid: `2px solid ${tema.green500}`,
+  };
+
   return (
-    <input
-    type="text"
-    placeholder={placeholder}
+    <StyleInput
+      name={name}
+      type={type}
+      value={value}
+      onChange={(e) => onChange(e.target.value)}
+      style={{
+        border: isValid ? variantes.valid : hasError ? variantes.error : "",
+      }}
+      required={required}
+      placeholder={placeholder}
+      
     />
-)}
+  );
+};
 
-export default Input
-
-const StyleInput = styled.input `
-border-radius: 8px;
-background-color: red;
-
-`
+export default Input;
