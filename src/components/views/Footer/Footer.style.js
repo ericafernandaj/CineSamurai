@@ -38,6 +38,12 @@ font-family: 'Montserrat', sans-serif;
 
 .icones svg{
     cursor: pointer;
+    margin-right:10px;
+}
+.icones svg:hover{
+    transform: scale(1.2);
+    transition: .3s;
+    opacity: .5;
 }
 
 
