@@ -6,14 +6,22 @@ const Footer = () => {
   return (
   <StyleFooter>
     <div className='rodape'>
+      
     <section className='localização-icone'>
-    <MapPin className='map' color={tema.white50} size={20}weight="fill" />
-    <p className='nome-rua-rodape'>Rua Qualquer, 123, Cidade QualquerCuritiba-PR</p>
+        <MapPin className='map' color={tema.white50} size={20}weight="fill" />
+        <p className='nome-rua-rodape'>Rua Qualquer, 123, Cidade QualquerCuritiba-PR</p>
     </section>
+      
 <section className='icones'>
-<LinkedinLogo color={tema.white50} size={20}weight="fill" />
-<InstagramLogo color={tema.white50}size={20}/>
-<FacebookLogo color={tema.white50} size={20} />
+<a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+<LinkedinLogo color={tema.white50} size={40} weight="fill" />
+</a>
+<a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+<InstagramLogo color={tema.white50}size={40}/>
+</a>
+<a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+<FacebookLogo color={tema.white50} size={40} />
+</a>
 </section>
 <section className='contato'>
     <h3>Fale conosco</h3>
