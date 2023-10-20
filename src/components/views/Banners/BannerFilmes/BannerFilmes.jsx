@@ -12,7 +12,7 @@ import ButtonPoltrona from "../../../common/ButtonPoltrona/ButtonPoltrona"
 const BannerFilmes = () => {
 const navigate = useNavigate();
 const handleClick = () => {
-    navigate('/VendasOnline');
+    navigate('/Login');
   };
   return (
     <StyleFilmes>

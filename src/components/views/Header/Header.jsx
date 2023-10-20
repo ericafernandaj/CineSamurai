@@ -3,7 +3,7 @@ import {StyleHeader} from './Header.Style'
 import { Link } from 'react-router-dom'
 
 const Header = () => {
-    // const navigate = useNavigate()
+   
 
   return (
     <StyleHeader>
@@ -19,7 +19,7 @@ const Header = () => {
           <Link to='/Filmes'className={"link"}>Filmes</Link>
           </li>  
           <li>
-          <Link to='/VendasOnline'className={"link"}>Venda Online</Link>
+          <Link to='/Precos'className={"link"}>Preços</Link>
           </li> 
           <li>
           <Link to='/Login'className={"link"}>Login</Link>
