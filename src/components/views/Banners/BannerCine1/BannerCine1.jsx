@@ -22,11 +22,11 @@ const Bannercine1 = () => {
       <section className="initBox">
         <div className="buttonBox">
           <h1>🍿 Cine Samurai Curitiba</h1>
-          <Button texto="Programação" variant="primary" onClick={handleClick} />
           <Button texto="Preços" variant="primary" onClick={handlePreco} />
+          <Button texto="Programação" variant="primary" onClick={handleClick} />
         </div>
         <div className="subtitulo">
-        <h2 >Em Breve</h2>
+        <h2 >🎬Em Breve!</h2>
 
         </div>
       </section>
