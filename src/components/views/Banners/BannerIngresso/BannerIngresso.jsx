@@ -9,16 +9,38 @@ const handleClick = () => {
   };
   return (
     <StyleIngresso>
-        <section>
-        <section>
-            <h1>Ingresso</h1>
-        </section> 
-        <section>
-            <h2>ESCOLHA UMA DATA PARA ASSISTIR ESTE FILME:</h2>
-            <Button texto='Continuar' variant='primary' onClick={handleClick}/>
-          </section>   
+    <section className='bloco1'>
+      <h1 className='cinemaTitle'>Ingresso</h1>
+    </section>
+    <section className='cinema-title'>
+      <h2 >ESCOLHA UMA DATA PARA ASSISTIR ESTE FILME:</h2>
+    </section>
+    <section className='bloco2'>
+    <label htmlFor='day-select' className='selectLabel'>Dia da Semana:</label>
+          <select id='day-select' className='select'>
+            <option>Segunda-Feira</option>
+            <option>Terça-Feira</option>
+            <option>Quarta-Feira</option>
+            <option>Quinta-Feira</option>
+            <option>Sexta-Feira</option>
+            <option>Sábado</option>
+            <option>Domingo</option>
+          </select>
+    </section>
+        <section className='bloco2'>
+          <label htmlFor='time-select' className='selectLabel'>Horário:</label>
+          <select id='time-select' className='select'>
+            <option>14:30</option>
+            <option>16:30</option>
+            <option>17:00</option>
+          </select>
         </section>
-    </StyleIngresso>
+      <section>
+      <Button texto ='Cadastrar' variant='primary' onClick={handleClick}/>
+      </section>
+  
+  </StyleIngresso>
+  
   )
 }
 
