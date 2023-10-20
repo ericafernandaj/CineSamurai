@@ -31,16 +31,6 @@ export const StyleLogin = styled.main`
         padding: 50px;
     }
 
-    input {
-        border-radius: 8px;
-        padding: 12px 15px;
-        width: 300px;
-        font-weight: 650;
-        line-height: normal;
-        font-size: 1rem;
-        font-family: 'Roboto',sans-serif;
-    }
-
     .link-cadastro {
         font-size: 15px;
         font-family: 'Roboto',sans-serif;
