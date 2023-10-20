@@ -51,4 +51,10 @@ h1{
 color:white;
 font-family: 'Work Sans', sans-serif;
 }
+.subtitulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 `

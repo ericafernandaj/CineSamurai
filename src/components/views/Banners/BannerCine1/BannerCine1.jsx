@@ -25,7 +25,10 @@ const Bannercine1 = () => {
           <Button texto="Programação" variant="primary" onClick={handleClick} />
           <Button texto="Preços" variant="primary" onClick={handlePreco} />
         </div>
-        <h2>Em Breve</h2>
+        <div className="subtitulo">
+        <h2 >Em Breve</h2>
+
+        </div>
       </section>
       <section className="posterBox">
         <Poster
