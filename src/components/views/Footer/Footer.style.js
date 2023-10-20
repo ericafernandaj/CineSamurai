@@ -20,8 +20,7 @@ align-items: center;
 }
 .nome-rua-rodape{
 font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Work Sans', sans-serif;
+
 }
 .map{
 margin-right: 4px;
@@ -35,10 +34,19 @@ gap: 0;
 margin: auto;
 font-size: 16px; 
 font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Work Sans', sans-serif;
-
 }
+
+.icones svg{
+    cursor: pointer;
+    margin-right:10px;
+}
+.icones svg:hover{
+    transform: scale(1.2);
+    transition: .3s;
+    opacity: .5;
+}
+
+
 
 
 `

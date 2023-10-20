@@ -8,8 +8,10 @@ margin-top: 20px;
 .initBox{
     width: 90%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;    
-    margin-left: 180px;
+    margin-top: 50px;
     gap:25px;
 }
 
@@ -49,6 +51,22 @@ margin-top: 20px;
 
 h1{
 color:white;
-font-family: 'Work Sans', sans-serif;
+font-family: "Montserrat", sans-serif;
+
 }
+
+.buttonBox button:hover{    
+    background-color: #d266ff;
+    transition: .3s;
+    transform:scale(1.02);
+
+}
+
+.subtitulo h2{
+    font-family: "Montserrat", sans-serif;
+    font-size:2.5rem;
+    margin: 80px;
+    
+}
+
 `
