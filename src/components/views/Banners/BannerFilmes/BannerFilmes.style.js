@@ -10,6 +10,7 @@ margin-top: 20px;
     gap:25px;
 }
 
+
 .posterBox{
     display: flex;
     flex-direction: column;
@@ -21,7 +22,10 @@ margin-top: 20px;
 h1{
 color:white;
 font-family: 'Work Sans', sans-serif;
+display:flex;
+margin-top: 2%;
 }
+
 .Botaoingresso{
     display: flex;
     flex-direction: row;
