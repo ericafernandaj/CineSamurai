@@ -1,72 +1,84 @@
 import styled from "styled-components";
 
+
 export const StyleBannerCine1 = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-top: 20px;
-.initBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+
+  table {
+  font-family: "Montserrat", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+}
+
+.linha1 {
+    background-color: #101728;
+    color: rgb(247, 247, 247);
+}
+
+  .initBox {
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;    
+    flex-direction: column;
     margin-top: 50px;
-    gap:25px;
-}
+    gap: 25px;
+  }
 
-.posterBox{
+  .posterBox {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     margin: 0 20%;
-}
-.meia{
+  }
+  .meia {
     width: 100px;
-    
-    
-}
-.cardPromocao{
+  }
+  .cardPromocao {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
     color: white;
     align-items: center;
-}
-.pipocaMeia{
+  }
+  .pipocaMeia {
     width: 100%;
-}
+  }
 
-.primeiroBloco{
+  .primeiroBloco {
     display: flex;
-    align-items: center; 
-    
-}
-.segundoBloco{
+    align-items: center;
+  }
+  .segundoBloco {
     margin-bottom: 5%;
-}
+  }
 
-
-h1{
-color:white;
-font-family: "Montserrat", sans-serif;
-
-}
-
-.buttonBox button:hover{    
-    background-color: #d266ff;
-    transition: .3s;
-    transform:scale(1.02);
-
-}
-
-.subtitulo h2{
+  h1 {
+    color: white;
     font-family: "Montserrat", sans-serif;
-    font-size:2.5rem;
-    margin: 80px;
-    
-}
+  }
 
-`
+  .buttonBox button:hover {
+    background-color: #d266ff;
+    transition: 0.3s;
+    transform: scale(1.02);
+  }
+
+  .subtitulo h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    margin: 80px;
+  }
+`;

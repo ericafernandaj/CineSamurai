@@ -9,25 +9,79 @@ import figurapromo from "../../../../../public/figurapromocao.png";
 import Figurameia from "../../../../../public/meia.svg";
 import FaixaEtaria from "../../../../../public/FaixaEtaria.svg";
 import { useNavigate } from "react-router-dom";
+import Modal from "../../../common/Modal/Modal";
+import { useState } from "react";
+
 const Bannercine1 = () => {
   const navigate = useNavigate();
+  const [modalTaAberto, setModalTaAberto] = useState(false);
+
   const handleClick = () => {
     navigate("/Filmes");
   };
-  const handlePreco = () => {
-    navigate("/Precos");
-  };
+
   return (
     <StyleBannerCine1>
       <section className="initBox">
         <div className="buttonBox">
           <h1>🍿 Cine Samurai Curitiba</h1>
-          <Button texto="Preços" variant="primary" onClick={handlePreco} />
+          <Button
+            texto="Preços"
+            variant="primary"
+            onClick={() => setModalTaAberto(true)}
+          />
+          <Modal
+            title="Preços"
+            open={modalTaAberto}
+            fechaModal={() => setModalTaAberto(false)}
+          >
+            <table>
+              <tr className="linha1">
+                <th>Dia da semana</th>
+                <th>Inteira</th>
+                <th>Meia</th>
+              </tr>
+              <tr>
+                <th>Segunda-feira</th>
+                <th>R$ 12,00</th>
+                <th>R$ 6,00</th>
+              </tr>
+              <tr>
+                <th>Terça-feira</th>
+                <th>R$ 15,00</th>
+                <th>R$ 7,50</th>
+              </tr>
+              <tr>
+                <th>Quarta-feira</th>
+                <th>R$ 15,00</th>
+                <th>R$ 7,50</th>
+              </tr>
+              <tr>
+                <th>Quinta-feira</th>
+                <th>R$ 16,00</th>
+                <th>R$ 8,00</th>
+              </tr>
+              <tr>
+                <th>Sexta-feira</th>
+                <th>R$ 26,00</th>
+                <th>R$ 13,00</th>
+              </tr>
+              <tr>
+                <th>Sábado</th>
+                <th>R$ 26,00</th>
+                <th>R$ 13,00</th>
+              </tr>
+              <tr>
+                <th>Domingo</th>
+                <th>R$ 26,00</th>
+                <th>R$ 13,00</th>
+              </tr>
+            </table>
+          </Modal>
           <Button texto="Programação" variant="primary" onClick={handleClick} />
         </div>
         <div className="subtitulo">
-        <h2 >🎬Em Breve!</h2>
-
+          <h2>🎬Em Breve!</h2>
         </div>
       </section>
       <section className="posterBox">
