@@ -19,10 +19,7 @@ const Header = () => {
           <Link to='/Filmes'className={"link"}>Filmes</Link>
           </li>  
           <li>
-          <Link to='/Precos'className={"link"}>Preços</Link>
-          </li> 
-          <li>
-          <Link to='/Login'className={"link"}>Login</Link>
+          <Link to='/QuemSomos'className={"link"}>Quem Somos</Link>
           </li> 
           </ul>
           </nav>
