@@ -33,7 +33,7 @@ export const StyleLogin = styled.main`
         
     }
     label{
-        font-weight: bold;
+        font-weight: 500;
     }
 
     .div-principal button {

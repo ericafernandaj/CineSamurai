@@ -59,7 +59,7 @@ export const StyleCadastro = styled.div`
     
   }
   label{
-        font-weight: bold;
+        font-weight: 500;
     }
 
   .align-textfield{
