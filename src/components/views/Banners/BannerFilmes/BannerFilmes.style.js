@@ -26,5 +26,14 @@ font-family: 'Work Sans', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
 }
+
+.Botaoingresso button:hover{
+    background-color: #d266ff;
+        transition: 0.3s;
+        transform: scale(1.02);
+
+}
+
 `
