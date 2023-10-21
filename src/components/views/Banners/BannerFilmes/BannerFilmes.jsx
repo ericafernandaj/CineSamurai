@@ -18,7 +18,7 @@ const handleClick = () => {
     <StyleFilmes>
     <section className='initBox'>
         <h1>🍿Programação</h1>
-        <ButtonPoltrona numero={10} />
+        
     </section>
     <section >
     <section className="posterBox" >
@@ -35,7 +35,7 @@ const handleClick = () => {
         faixa={Faixaetaria16}/>
     </section>
     <section className="Botaoingresso">
-    <Button texto='Ingresso' variant='primary' onClick={handleClick}/>
+    <Button texto='Comprar Ingresso' variant='primary' onClick={handleClick}/>
     </section>
     <section className="posterBox">
         <Poster
@@ -51,7 +51,7 @@ const handleClick = () => {
         faixa={FaixaEtaria10}/>
     </section>
     <section className="Botaoingresso">
-    <Button texto='Ingresso' variant='primary' onClick={handleClick}/>
+    <Button texto='Comprar Ingresso' variant='primary' onClick={handleClick}/>
     </section>  
     <section className="posterBox">
         <Poster
@@ -65,7 +65,7 @@ const handleClick = () => {
         faixa={Faixaetaria16}/>
     </section>
     <section className="Botaoingresso">
-    <Button texto='Ingresso' variant='primary' onClick={handleClick}/>
+    <Button texto='Comprar Ingresso' variant='primary' onClick={handleClick}/>
     </section>
     </section>
    
