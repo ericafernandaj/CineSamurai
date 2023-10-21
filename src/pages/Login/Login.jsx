@@ -28,47 +28,48 @@ const Login = () => {
   }
 
   return (
-    <StyleLogin>
+    <>
       <Header />
-      <section>
-        <div className="div-principal">
-          <h1>Login</h1>
-          <form>
-            <Textfield
-              label="Email"
-              name="email"
-              type="email"
-              placeholder="email@email.com"
-              required
-              value={email}
-              onChange={(e) => setEmail(e)}
-            />
+      <StyleLogin>
+        <section>
+          <div className="div-principal">
+            <h1>Login</h1>
+            <form>
+              <Textfield
+                label="Email:"
+                name="email"
+                type="email"
+                placeholder="email@email.com"
+                required
+                value={email}
+                onChange={(e) => setEmail(e)}
+              />
 
-            <Textfield
-              label="Senha"
-              name="senha"
-              placeholder="●●●●●●●"
-              type="password"
-              required
-              value={senha}
-              onChange={(e) => setSenha(e)}
-            />
-            {error && <p style={{ color: "red" }}>{error}</p>}
-            <Button
-              texto="Entrar"
-              variant="primary"
-              width="10"
-              onClick={handleLogin}
-            />
-            <Link to="/cadastro" className="link-cadastro">
-              Ainda não é cadastrado?
-            </Link>
-          </form>
-        </div>
-      </section>
-
+              <Textfield
+                label="Senha:"
+                name="senha"
+                placeholder="●●●●●●●"
+                type="password"
+                required
+                value={senha}
+                onChange={(e) => setSenha(e)}
+              />
+              {error && <p style={{ color: "red" }}>{error}</p>}
+              <Button
+                texto="Entrar"
+                variant="primary"
+                width="10"
+                onClick={handleLogin}
+              />
+              <Link to="/cadastro" className="link-cadastro">
+                Não possui cadastro?
+              </Link>
+            </form>
+          </div>
+        </section>
+      </StyleLogin>
       <Footer />
-    </StyleLogin>
+    </>
   );
 };
 

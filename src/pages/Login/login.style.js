@@ -34,6 +34,7 @@ export const StyleLogin = styled.main`
     .link-cadastro {
         font-size: 15px;
         font-family: 'Roboto',sans-serif;
+        color: #263238;
     }
   
   
