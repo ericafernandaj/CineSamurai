@@ -132,7 +132,8 @@ const Bannercine1 = () => {
           <img className="pipocaMeia" src={figurapromo} alt="" />
         </picture>
 
-        <div className="primeiroBloco">
+        <div>
+          <div className="primeiroBloco">
           <h2 className="tituloBloco">Quem Paga</h2>
           <picture>
             <img className="meia" src={Figurameia} alt="" />
@@ -148,6 +149,8 @@ const Bannercine1 = () => {
             <li>Doador de sangue</li>
           </ul>
         </div>
+        </div>
+        
       </section>
     </StyleBannerCine1>
   );
