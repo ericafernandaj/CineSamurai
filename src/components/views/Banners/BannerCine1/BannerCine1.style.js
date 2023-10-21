@@ -42,6 +42,12 @@ td, th {
     width: 100%;
     margin: 0 20%;
   }
+
+  .posterBox img:hover{    
+    transition: .3s;
+    transform: scale(1.05) translateY(-10px);  
+    
+  }
   .meia {
     width: 100px;
   }

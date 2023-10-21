@@ -33,11 +33,22 @@ margin-top: 2%;
     
 }
 
+.Botaoingresso button{
+    margin-bottom: 3%;
+}
+
+.posterBox img:hover{    
+    transition: .3s;
+    transform: scale(1.05) translateY(-20px);  
+    
+}
+
 .Botaoingresso button:hover{
     background-color: #d266ff;
         transition: 0.3s;
         transform: scale(1.02);
 
 }
+
 
 `
