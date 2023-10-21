@@ -40,7 +40,7 @@ const Cadastro = () => {
       <StyleCadastro>
         <section>
           <h1>Cadastre-se</h1>
-        </section>
+        
 
         <form>
           <div className="align-textfield">
@@ -106,15 +106,16 @@ const Cadastro = () => {
           </div>
         </form>
 
-        <section>
+        <div className="div-cadastro">
           <Button
             texto="Cadastrar"
             variant="primary"
             onClick={handleCadastro}
-          />
+            />
           <Link to="/login" className="link-login">
             Já possuo cadastro.
           </Link>
+        </div>
         </section>
       </StyleCadastro>
       <Footer />
