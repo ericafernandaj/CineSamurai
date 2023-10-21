@@ -26,9 +26,24 @@ export const StyleLogin = styled.main`
 
     .div-principal {
         border-radius: 12px;
-        background-color: #E9F0F0;
+        background-color: #d266ff;;
         width: 60%;
         padding: 50px;
+        margin: 5% 0 10% 0%;
+        
+    }
+    label{
+        font-weight: bold;
+    }
+
+    .div-principal button {
+        color: #5c2b71;
+    }
+
+    .div-principal button:hover {
+        background-color: #5c2b71;
+        color:#fabd2b;
+        transition: .2s;
     }
 
     .link-cadastro {

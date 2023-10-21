@@ -3,12 +3,10 @@ import styled from "styled-components";
 export const StyleCadastro = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border: solid white;
+  align-items: center;  
   width: 50%;
   width: 70%;
   margin: 30px auto;
-  background-color: #e9f0f0;
   border-radius: 8px;
 
   h1 {
@@ -26,15 +24,43 @@ export const StyleCadastro = styled.div`
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: #e9f0f0;
-    gap: 8px;
+    background-color: #d266ff;
+    padding: 2% 12% 3% 12%;
+    border-radius: 3%;    
+    gap: 8px;   
+    
   }
+
+  section button{
+    color: #5c2b71;
+    
+  }
+
+  section button:hover{    
+    background-color: #5c2b71;
+    color:#fabd2b;
+    transition: .2s;    
+  }
+
+  .div-cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 18px;
+  }
+
 
   form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
+    
   }
+  label{
+        font-weight: bold;
+    }
 
   .align-textfield{
     display: flex;
