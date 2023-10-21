@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyleLogin = styled.main` 
     
     section, .div-principal, form {
-         display: flex;
+        display: flex;
     }
 
     h1 {
