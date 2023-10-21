@@ -61,6 +61,16 @@ td, th {
   }
   .segundoBloco {
     margin-bottom: 5%;
+
+  }
+
+  .segundoBloco ul{
+    list-style-type: none;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  
   }
 
   h1 {

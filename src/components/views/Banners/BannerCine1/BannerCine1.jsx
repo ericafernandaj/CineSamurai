@@ -142,11 +142,11 @@ const Bannercine1 = () => {
         </div>
         <div className="segundoBloco">
           <ul>
-            <li>Estudantes</li>
-            <li>Idosos</li>
-            <li>Professores</li>
-            <li>Portadores de deficiência</li>
-            <li>Doador de sangue</li>
+            <li>👨🏻‍🎓 Estudantes</li>
+            <li>👵🏻 Idosos</li>
+            <li>👩🏻‍🏫 Professores</li>
+            <li>👨🏻‍🦽 Portadores de deficiência</li>
+            <li>🩸 Doador de sangue</li>
           </ul>
         </div>
         </div>
