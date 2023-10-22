@@ -24,7 +24,7 @@ export const StyleCadastro = styled.div`
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: #d266ff;
+    background-color: #dcb2ed;
     padding: 2% 12% 3% 12%;
     border-radius: 3%;    
     gap: 8px;   

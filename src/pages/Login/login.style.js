@@ -26,7 +26,7 @@ export const StyleLogin = styled.main`
 
     .div-principal {
         border-radius: 12px;
-        background-color: #d266ff;;
+        background-color: #dcb2ed;
         width: 60%;
         padding: 50px;
         margin: 5% 0 10% 0%;
