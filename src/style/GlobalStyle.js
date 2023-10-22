@@ -4,9 +4,7 @@ export const GlobalStyle = createGlobalStyle`
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;    
     font-family: 'Work Sans', sans-serif;
 }
 body,#root{
