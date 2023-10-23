@@ -8,6 +8,10 @@ import { ThemeProvider } from 'styled-components'
 import VendasOnline from './pages/VendasOnline/VendasOnline'
 import Cadastro from './pages/Cadastro/Cadastro'
 import Poltrona from './pages/Poltrona/Poltrona'
+import Pagamentos from './pages/Pagamentos/Pagamentos'
+import ManPag from './pages/ManutencaoPg/ManuPag'
+import QuemSomos from './pages/QuemSomos/QuemSomos'
+
 const Rotas = () => {
   return (
 
@@ -21,6 +25,10 @@ const Rotas = () => {
           <Route path='/Login' element={<Login />} />
           <Route path='/Cadastro' element={<Cadastro/>} />
           <Route path ='/Poltrona' element={<Poltrona/>} />
+          <Route path='/Pagamentos' element={<Pagamentos/>}/>
+          <Route path='/ManutencaoPg' element={<ManPag/>}/>
+          <Route path='/QuemSomos' element={<QuemSomos/>}/>
+          
         </Routes>
 
       </ThemeProvider>
