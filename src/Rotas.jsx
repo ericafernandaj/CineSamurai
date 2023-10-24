@@ -9,7 +9,6 @@ import VendasOnline from './pages/VendasOnline/VendasOnline'
 import Cadastro from './pages/Cadastro/Cadastro'
 import Poltrona from './pages/Poltrona/Poltrona'
 import Pagamentos from './pages/Pagamentos/Pagamentos'
-import ManPag from './pages/ManutencaoPg/ManuPag'
 import QuemSomos from './pages/QuemSomos/QuemSomos'
 import AreaUsuario from './pages/AreaUsuario/AreaUsuario'
 
@@ -27,7 +26,6 @@ const Rotas = () => {
           <Route path='/Cadastro' element={<Cadastro/>} />
           <Route path ='/Poltrona' element={<Poltrona/>} />
           <Route path='/Pagamentos' element={<Pagamentos/>}/>
-          <Route path='/ManutencaoPg' element={<ManPag/>}/>
           <Route path='/QuemSomos' element={<QuemSomos/>}/>
           <Route path='/AreaUsuario' element={<AreaUsuario/>}/>          
         </Routes>
