@@ -17,10 +17,10 @@ const Login = () => {
     e.preventDefault();
     const resposta = await loginUsuario(email, senha);
 
-    if (resposta.success) {
-      navigate("/home");
-      localStorage.setItem("id", resposta.data.id);
-      localStorage.setItem("nome", resposta.data.nome);
+    if (resposta.token) {
+      localStorage.setItem("id", resposta.id_usuario);
+      localStorage.setItem("token", resposta.token);
+      navigate("/VendasOnline");
     } else {
       setError(resposta.message);
     }
@@ -54,7 +54,7 @@ const Login = () => {
                 value={senha}
                 onChange={(e) => setSenha(e)}
               />
-              {error && <p style={{ color: "red" }}>{error}</p>}
+              {error && <p style={{ color: "#A3151A" }}>{error}</p>}
               <Button
                 texto="Entrar"
                 variant="primary"
