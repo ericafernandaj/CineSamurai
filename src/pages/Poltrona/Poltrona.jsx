@@ -1,10 +1,10 @@
-import Header from "../../components/views/Header/Header"
+import HeaderLogado from '../../components/views/HeaderLogado/HeaderLogado'
 import Footer from "../../components/views/Footer/Footer"
 import SelecionarPoltrona from "../../components/views/SelecionarPoltrona/SelecionarPoltrona"
 const Poltrona = () => {
   return (
     <div>
-        <Header/>
+        <HeaderLogado/>
         <SelecionarPoltrona/>
         <Footer/>
     </div>

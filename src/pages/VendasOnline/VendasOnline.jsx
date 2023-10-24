@@ -1,10 +1,10 @@
-import Header from '../../components/views/Header/Header'
+import HeaderLogado from '../../components/views/HeaderLogado/HeaderLogado'
 import Footer from '../../components/views/Footer/Footer'
 import BannerIngresso from '../../components/views/Banners/BannerIngresso/BannerIngresso'
 const VendasOnline = () => {
   return (
     <div>
-        <Header/>
+        <HeaderLogado/>
         <BannerIngresso/>
         <Footer/>
         </div>

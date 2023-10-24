@@ -1,4 +1,4 @@
-import Header from "../../components/views/Header/Header"
+import HeaderLogado from '../../components/views/HeaderLogado/HeaderLogado'
 import Footer from "../../components/views/Footer/Footer"
 import BannerPagamentos from "../../components/views/Banners/BannerPagamentos/BannerPagamentos"
 
@@ -6,7 +6,7 @@ import BannerPagamentos from "../../components/views/Banners/BannerPagamentos/Ba
 const Pagamentos = () => {
 return (
         <div>
-    <Header/>
+    <HeaderLogado/>
     <BannerPagamentos/>    
     <Footer/>
         </div>

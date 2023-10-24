@@ -2,8 +2,13 @@ import HeaderLogado from '../../components/views/HeaderLogado/HeaderLogado'
 import Footer from '../../components/views/Footer/Footer'
 import { StyleAreaUsuario } from './areaUsuario.style'
 import Button from '../../components/common/Button/Button'
+import Modal from "../../components/common/Modal/Modal"
 
 const AreaUsuario = () => {
+
+  const [modalAberto, setModalAberto] = useState(false)
+  const [modalDeleta, setModalDeleta] = useState(true)
+
       return (
   <> 
     <HeaderLogado/>
