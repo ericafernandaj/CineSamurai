@@ -5,6 +5,7 @@ import Textfield from "../../components/views/Textfield/Textfield";
 import Button from "../../components/common/Button/Button";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { postUsuario } from "../../service/api";
 
 const Cadastro = () => {
   const [nome, setNome] = useState("");
