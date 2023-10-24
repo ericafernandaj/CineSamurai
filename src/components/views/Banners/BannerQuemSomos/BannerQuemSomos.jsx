@@ -27,17 +27,17 @@ const BannerQuemSomos = () => {
 
         <h2>Nossa Missão</h2>
 
-        <h3>Facilitar o Acesso</h3>
-        <p>Queremos simplificar o processo de assistir a um filme. Com nossa plataforma online intuitiva, você pode navegar pelos filmes em exibição, escolher seus lugares e comprar ingressos no conforto da sua casa, a qualquer hora do dia ou da noite.</p>
+        
+        <p><h3>Facilitar o Acesso</h3>Queremos simplificar o processo de assistir a um filme. Com nossa plataforma online intuitiva, você pode navegar pelos filmes em exibição, escolher seus lugares e comprar ingressos no conforto da sua casa, a qualquer hora do dia ou da noite.</p>
 
-        <h3>Experiência Confortável</h3>
-        <p>Criamos um ambiente de cinema acolhedor e moderno, onde você pode desfrutar dos últimos lançamentos e clássicos do cinema em assentos confortáveis, som de alta qualidade e projeção impecável.</p>
+        
+        <p><h3>Experiência Confortável</h3>Criamos um ambiente de cinema acolhedor e moderno, onde você pode desfrutar dos últimos lançamentos e clássicos do cinema em assentos confortáveis, som de alta qualidade e projeção impecável.</p>
 
-        <h3>Diversidade Cinematográfica</h3>
-        <p>Valorizamos a diversidade cultural e cinematográfica. Nosso catálogo inclui uma variedade de gêneros, idiomas e culturas para atender a todos os gostos.</p>
+        
+        <p><h3>Diversidade Cinematográfica</h3>Valorizamos a diversidade cultural e cinematográfica. Nosso catálogo inclui uma variedade de gêneros, idiomas e culturas para atender a todos os gostos.</p>
 
-        <h3>Excelência no Atendimento</h3>
-        <p>Nossa equipe dedicada está sempre pronta para ajudá-lo. Desde o momento em que você compra seu ingresso até o final do filme, estamos comprometidos em proporcionar um atendimento excepcional.</p>
+        
+        <p><h3>Excelência no Atendimento</h3>Nossa equipe dedicada está sempre pronta para ajudá-lo. Desde o momento em que você compra seu ingresso até o final do filme, estamos comprometidos em proporcionar um atendimento excepcional.</p>
 
       </section>
     </StyleQuemSomos>
