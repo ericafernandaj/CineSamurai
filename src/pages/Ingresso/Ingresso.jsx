@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleIngresso } from './ingresso.style'
-import Header from '../../components/views/Header/Header'
+import HeaderLogado from '../../components/views/HeaderLogado/HeaderLogado'
 import Footer from '../../components/views/Footer/Footer'
 
 
@@ -11,7 +11,7 @@ const Ingresso = () => {
 
     return (
         <>
-            <Header />
+            <HeaderLogado />
             <StyleIngresso>
                 <h2>Parabéns, você finalizou sua compra!</h2>
                 <p color="white">Suas poltronas: {`${poltronas}`}</p >
