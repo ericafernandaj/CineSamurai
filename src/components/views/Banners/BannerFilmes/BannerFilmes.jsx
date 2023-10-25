@@ -8,7 +8,9 @@ import Interestelar from "../../../../../public/Programacao2.jpg"
 import TemposDeViolencia from "../../../../../public/Pogramacao3.jpg"
 import FaixaEtaria10 from "../../../../../public/figurafaixaetaria10.png"
 import { useNavigate } from 'react-router-dom';
-import ButtonPoltrona from "../../../common/ButtonPoltrona/ButtonPoltrona"
+
+// import ButtonPoltrona from "../../../common/ButtonPoltrona/ButtonPoltrona"
+
 const BannerFilmes = () => {
 const navigate = useNavigate();
 const handleClick = () => {
