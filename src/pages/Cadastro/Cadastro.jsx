@@ -27,7 +27,7 @@ const Cadastro = () => {
       email.length > 11 &&
       email.includes("@") &&
       email.includes(".com") &&
-      (email.includes("gmail") || email.includes("hotmail"))
+      (email.includes("gmail") || email.includes("hotmail") || email.includes("yahoo")) 
     );
   }
 
@@ -49,28 +49,33 @@ const Cadastro = () => {
     );
   }
 
-  function validaSenha(senha, confirmaSenha){
-    return senha.length > 7 && senha.length <= 12 && senha == confirmaSenha
-}
+  function validaSenha(senha, confirmaSenha) {
+    return senha.length > 7 && senha.length <= 12 && senha == confirmaSenha;
+  }
 
   const handleCadastro = async (e) => {
-
     e.preventDefault();
 
-    const body = {
-      nome,
-      email,
-      cpf: cpf_usuario, //cpf AS cpf_usuario
-      telefone,
-    };
-
     if (validaNome && validaEmail && validaSenha && validaCPF && validaTelefone) {
-      navigate("/Login")
+
+      const body = {
+        nome,
+        email,
+        cpf: cpf_usuario, //cpf AS cpf_usuario
+        telefone,
+      };
+  
       const resposta = await postUsuario(body, senha);
-      console.log(resposta);
-      localStorage.setItem("id", resposta.id_usuario); 
       
-    } else {
+      if (resposta){
+        localStorage.setItem("id", resposta.id_usuario);
+        navigate("/Login");
+      }
+      else {
+        console.log('Erro ao cadastrar usuário')
+      } 
+    } 
+    else {
       console.log("Verifique as informações");
     }
   };
