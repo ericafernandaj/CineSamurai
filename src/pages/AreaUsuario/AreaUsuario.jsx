@@ -10,27 +10,26 @@ import { useState } from 'react'
 const AreaUsuario = () => {
   const navigate = useNavigate()
   const [modalDelete, setModalDelete] = useState(false)
-  const [id, setId] = useState('')
 
   const clearLocalStorage = () => {
-    localStorage.removeItem("id");
-    localStorage.removeItem("token");
+    localStorage.clear()
     navigate("/")
   };
-
+  
   async function handleDeletarUsuario(){
-    const resposta = await deleteUsuario(localStorage.getItem("token"))
+    const id = localStorage.getItem("id")
+    const resposta = await deleteUsuario(id)
     setModalDelete(false)
-    if (resposta.message === "Usuário deletado do banco de dados") {
-      console.log("Funcionou")
+    if (resposta.id) {
+      console.log('funcionou')
+      clearLocalStorage()
     }
     else {
       console.log(resposta.message);
     }
   }
 
-  function handleAbrirModalDelete(id) {
-    setId(id)
+  function handleAbrirModalDelete() {
     setModalDelete(true)
   }
 
