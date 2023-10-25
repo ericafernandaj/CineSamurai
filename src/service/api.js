@@ -23,11 +23,6 @@ export const loginUsuario = async (email, senha) => {
 };
 
 export const postUsuario = async (body, senha) => {
-  // const config = {
-  //   headers: {
-  //     'X-password': senha,
-  //   },
-  // }
   try {
     const resposta = await api.post("/usuarios", { ...body, senha });
     return resposta.data;
@@ -52,3 +47,40 @@ export const deleteUsuario = async (id) => {
     }
   }
 }
+
+export const updateUsuario = async (id, nome, email, cpf, senha, telefone) => {
+  try {
+    const resposta = await api.patch('/usuarios', {id, nome, email, cpf, senha, telefone})
+    return resposta
+  } catch (error) {
+    if (error.response) {
+      return {
+        message: error.response.message
+      }
+    } else {
+      return {
+        message: 'Erro inesperado',
+      }
+    }
+  }
+}
+
+export const getUsuario = async (id) => {
+  console.log(id)
+  try {
+const resposta = await api.get(`/usuarios/${id}`)
+    return resposta
+  } catch (error) {
+    console.log(error.response)
+    if (error.response) {
+      return {
+        message: error.response.message
+      }
+    } else {
+      return {
+        message: 'Erro inesperado',
+      }
+    }
+  }
+}
+
