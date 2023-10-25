@@ -19,6 +19,7 @@ const Login = () => {
 
     if (resposta.token) {
       localStorage.setItem("id", resposta.id_usuario);
+      console.log(resposta.id_usuario)
       localStorage.setItem("token", resposta.token);
       navigate("/VendasOnline");
     } else {
