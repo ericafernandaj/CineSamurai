@@ -39,7 +39,7 @@ export const postUsuario = async (body, senha) => {
 export const deleteUsuario = async (id) => {
   try {
     const resposta = await api.delete(`/usuarios/${id}`)
-    return resposta
+    return resposta.message
   } catch (error) {
     if (error.response) {
       return {
