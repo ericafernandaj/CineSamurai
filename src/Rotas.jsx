@@ -12,6 +12,7 @@ import Pagamentos from "./pages/Pagamentos/Pagamentos";
 import QuemSomos from "./pages/QuemSomos/QuemSomos";
 import AreaUsuario from "./pages/AreaUsuario/AreaUsuario";
 import PrivateRoute from "./Rotas/PrivateRoute";
+import Ingresso from "./pages/Ingresso/Ingresso";
 
 const Rotas = () => {
   return (
@@ -24,6 +25,8 @@ const Rotas = () => {
           <Route path="/Login" element={<Login />} />
           <Route path="/Cadastro" element={<Cadastro />} />
           <Route path="/QuemSomos" element={<QuemSomos />} />
+          <Route path="/Ingresso" element={<Ingresso />} />
+
           <Route
             path="/AreaUsuario"
             element={
@@ -53,6 +56,15 @@ const Rotas = () => {
             element={
               <PrivateRoute>
                 <Pagamentos />
+              </PrivateRoute>
+            }
+            
+          />
+          <Route
+            path="/Ingresso"
+            element={
+              <PrivateRoute>
+                <Ingresso />
               </PrivateRoute>
             }
           />
