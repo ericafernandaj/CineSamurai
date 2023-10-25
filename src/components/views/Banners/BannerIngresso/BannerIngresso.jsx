@@ -83,7 +83,7 @@ function BannerIngresso() {
             value={quantidadeMeia}
             onChange={(e) => setQuantidadeMeia(parseInt(e.target.value, 10))}
           >
-            {Array.from({ length: 21 }, (_, i) => (
+            {Array.from({ length: 20}, (_, i) => (
               <option key={i} value={i}>
                 {i}
               </option>
@@ -106,7 +106,7 @@ function BannerIngresso() {
           </select>
         <section className="bloco3">
           <Button texto="Calcular Preço Total" variant="primary" onClick={handleCalcular} />
-          <p>Total: R$ {precoTotal.toFixed(2)}</p>
+          <p>Total: {precoTotal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</p>
           <Button texto="Continuar" variant="primary" onClick={handleContinuar} />
         </section>
         </section>
