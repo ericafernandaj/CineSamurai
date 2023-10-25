@@ -1,8 +1,21 @@
+import { useState } from "react"
 import styled from "styled-components"
-const ButtonPoltrona = ({ numero, onClick, selecionado, id }) => {
+const ButtonPoltrona = ({ numero, onClick, id, poltronasSelecionadas, setPoltronasSelecionadas }) => {
+  const [selecionado, setSelecionado] = useState(false)
   return (
 
-    <StylePoltrona onClick={() => onClick(id)}>
+
+    <StylePoltrona selecionado={selecionado} onClick={() => {
+      if(selecionado){
+        const retiradaSelecao = poltronasSelecionadas.filter(poltrona => poltrona!=id )
+        setPoltronasSelecionadas(retiradaSelecao)
+        
+      }else{
+        onClick(id)
+      }
+      setSelecionado(!selecionado)
+
+    }}>
       {numero}
 
     </StylePoltrona>
@@ -16,7 +29,8 @@ const StylePoltrona = styled.div`
 display: flex;
 justify-content:center;
 align-items: center;
-background-color: #4fc0a2;
+
+background-color: ${({selecionado}) => selecionado ? '#f54c5a' : '#4fc0a2'};
 font-weight: 700;
 height: 35px;
 width: 35px;
