@@ -18,7 +18,7 @@ export const loginUsuario = async (email, senha) => {
   } catch (error) {
     if (error.response) {
       return {
-        message: error.response.message,
+        message: error.response.message
       };
     } else {
       return {
@@ -41,3 +41,20 @@ export const postUsuario = async (body, senha) => {
     console.log(error.response);
   }
 };
+
+export const deleteUsuario = async (id) => {
+  try {
+    const resposta = await api.delete(`/usuarios/${id}`)
+    return resposta
+  } catch (error) {
+    if (error.response) {
+      return {
+        message: error.response.message
+      }
+    } else {
+      return {
+        message: 'Erro inesperado',
+      }
+    }
+  }
+}
