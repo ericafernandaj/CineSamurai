@@ -36,6 +36,7 @@ const Bannercine1 = () => {
             fechaModal={() => setModalTaAberto(false)}
           >
             <table>
+              <tbody>
               <tr className="linha1">
                 <th>Dia da semana</th>
                 <th>Inteira</th>
@@ -76,6 +77,7 @@ const Bannercine1 = () => {
                 <th>R$ 26,00</th>
                 <th>R$ 13,00</th>
               </tr>
+              </tbody>
             </table>
           </Modal>
           <Button texto="Programação" variant="primary" onClick={handleClick} />
