@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyleFilmes= styled.div`
 margin-top: 20px;
 .initBox{
-    width: 90%;
+    width: auto;
     display: flex;
     flex-direction: column;    
     margin-left: 180px;
