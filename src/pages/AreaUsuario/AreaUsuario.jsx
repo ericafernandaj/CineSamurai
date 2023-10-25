@@ -3,13 +3,23 @@ import Footer from '../../components/views/Footer/Footer'
 import { StyleAreaUsuario } from './areaUsuario.style'
 import Button from '../../components/common/Button/Button'
 import Modal from "../../components/common/Modal/Modal"
-import { deleteUsuario } from '../../service/api'
+import { deleteUsuario, updateUsuario, getUsuario } from '../../service/api'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
+import Textfield from '../../components/views/Textfield/Textfield'
+
 
 const AreaUsuario = () => {
   const navigate = useNavigate()
   const [modalDelete, setModalDelete] = useState(false)
+  const [modalUpdate, setModalUpdate] = useState(false)
+  const [nome, setNome] = useState('')
+  const [email, setEmail] = useState('')
+  const [senha, setSenha] = useState('')
+  const [confirmaSenha, setConfirmaSenha] = useState('')
+  const [telefone, setTelefone] = useState('')
+  const [cpf, setCpf] = useState('')
+  const id = localStorage.getItem("id")
 
   const clearLocalStorage = () => {
     localStorage.clear()
@@ -17,15 +27,15 @@ const AreaUsuario = () => {
   };
   
   async function handleDeletarUsuario(){
-    const id = localStorage.getItem("id")
+    
     const resposta = await deleteUsuario(id)
-    setModalDelete(false)
-    if (resposta.id) {
-      console.log('funcionou')
+    
+    if (resposta) {
       clearLocalStorage()
+      setModalDelete(false)
     }
     else {
-      console.log(resposta.message);
+      console.log('Erro inesperado');
     }
   }
 
@@ -33,11 +43,106 @@ const AreaUsuario = () => {
     setModalDelete(true)
   }
 
+
+  async function handleAtualizarUsuario(){
+    const resposta = await updateUsuario(id)
+
+    if (resposta) {
+      setModalUpdate(false)
+      console.log(resposta.message)
+    }
+    else {
+      console.log('Erro inesperado')
+    }
+  }
+
+  async function getDadosUsuario(){
+    const resposta = await getUsuario(id)
+    console.log(resposta)
+  }
+  
+  function handleAbrirModalUpdate() {
+    getDadosUsuario()
+    setModalUpdate(true)
+  }
+
+
       return (
   <> 
     <HeaderLogado/>
     <StyleAreaUsuario>
-        <Button texto='Alterar minhas informações' variant='primary' className='botao1'/>
+        <Button 
+        texto='Alterar minhas informações' 
+        variant='primary' 
+        className='botao1'
+        onClick={handleAbrirModalUpdate}
+        />
+        <Modal title='Editar informações' open={modalUpdate} fechaModal={() => setModalUpdate(false)}>
+        <form>
+            <div className="align-textfield">
+              <Textfield
+                label="Nome:"
+                name="Nome:"
+                type="text"
+                placeholder="Nome"
+                required
+                value={nome}
+                onChange={(e) => setNome(e)}
+              />
+              <Textfield
+                label="Email:"
+                name="Email:"
+                type="email"
+                placeholder="email@email.com"
+                required
+                value={email}
+                onChange={(e) => setEmail(e)}
+              />
+            </div>
+
+            <div className="align-textfield">
+              <Textfield
+                label="CPF:"
+                name="CPF:"
+                type="text"
+                placeholder="xxxxxxxxxxx"
+                required
+                value={cpf}
+                onChange={(e) => setCpf(e)}
+              />
+              <Textfield
+                label="Telefone:"
+                name="Telefone:"
+                placeholder="xxxxxxxxxxx"
+                required
+                value={telefone}
+                onChange={(e) => setTelefone(e)}
+              />
+            </div>
+
+            <div className="align-textfield">
+              <Textfield
+                label="Senha:"
+                name="Senha:"
+                placeholder="●●●●●●●"
+                type="password"
+                required
+                value={senha}
+                onChange={(e) => setSenha(e)}
+              />
+              <Textfield
+                label="Confirme a senha:"
+                name="Confirme a senha:"
+                placeholder="●●●●●●●"
+                type="password"
+                required
+                value={confirmaSenha}
+                onChange={(e) => setConfirmaSenha(e)}
+              />
+            </div>
+          </form>
+          <Button texto='Salvar alterações' variant='primary' onClick={handleAtualizarUsuario}/>
+      </Modal>
         <Button 
         texto='Excluir minha conta' 
         variant='primary'
@@ -47,6 +152,7 @@ const AreaUsuario = () => {
           <p>Você deseja realmente excluir sua conta?</p>
           <Button texto='Sim' variant='primary' onClick={handleDeletarUsuario}/>
         </Modal>
+        
         <Button texto='Sair' variant='primary' onClick={clearLocalStorage}/>
     </StyleAreaUsuario>
     <Footer/>
@@ -57,4 +163,4 @@ const AreaUsuario = () => {
   )
 }
 
-export default AreaUsuario;
+export default AreaUsuario
