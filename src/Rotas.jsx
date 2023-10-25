@@ -13,66 +13,81 @@ import QuemSomos from "./pages/QuemSomos/QuemSomos";
 import AreaUsuario from "./pages/AreaUsuario/AreaUsuario";
 import PrivateRoute from "./Rotas/PrivateRoute";
 import Ingresso from "./pages/Ingresso/Ingresso";
+import Spinner from "./components/common/Spinner/Spinner";
+import { useState } from "react";
+import { useEffect } from "react";
+
 
 const Rotas = () => {
+  const [load, setLoad] = useState(true);
+  useEffect(() =>{
+    setTimeout(() =>{
+      setLoad(false);
+    },3000)
+  },[])
   return (
+  
     <BrowserRouter>
       <ThemeProvider theme={tema}>
-        <GlobalStyle />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Filmes" element={<Filmes />} />
-          <Route path="/Login" element={<Login />} />
-          <Route path="/Cadastro" element={<Cadastro />} />
-          <Route path="/QuemSomos" element={<QuemSomos />} />
-          <Route path="/Ingresso" element={<Ingresso />} />
-
-          <Route
-            path="/AreaUsuario"
-            element={
-              <PrivateRoute>
-                <AreaUsuario />
-              </PrivateRoute>
-            }
-          />
-          <Route
-            path="/VendasOnline"
-            element={
-              <PrivateRoute>
-                <VendasOnline />
-              </PrivateRoute>
-            }
-          />
-          <Route
-            path="/Poltrona"
-            element={
-              <PrivateRoute>
-                <Poltrona />
-              </PrivateRoute>
-            }
-          />
-          <Route
-            path="/Pagamentos"
-            element={
-              <PrivateRoute>
-                <Pagamentos />
-              </PrivateRoute>
-            }
-            
-          />
-          <Route
-            path="/Ingresso"
-            element={
-              <PrivateRoute>
-                <Ingresso />
-              </PrivateRoute>
-            }
-          />
-
+      <GlobalStyle />
+      {
+      load?
+      <Spinner/>
+      :
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Filmes" element={<Filmes />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Cadastro" element={<Cadastro />} />
+        <Route path="/QuemSomos" element={<QuemSomos />} />
+        <Route
+          path="/AreaUsuario"
+          element={
+            <PrivateRoute>
+              <AreaUsuario />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/VendasOnline"
+          element={
+            <PrivateRoute>
+              <VendasOnline />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/Poltrona"
+          element={
+            <PrivateRoute>
+              <Poltrona />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/Pagamentos"
+          element={
+            <PrivateRoute>
+              <Pagamentos />
+            </PrivateRoute>
+          }
           
-        </Routes>
+        />
+        <Route
+          path="/Ingresso"
+          element={
+            <PrivateRoute>
+              <Ingresso />
+            </PrivateRoute>
+          }
+          
+        />
+
+        
+      </Routes>
+      }
       </ThemeProvider>
-    </BrowserRouter>
+      </BrowserRouter>
   );
 };
 
