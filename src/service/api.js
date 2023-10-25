@@ -6,14 +6,8 @@ const api = axios.create({
 
 export const loginUsuario = async (email, senha) => {
   try {
-    // const config = {
-    //     headers: {
-    //         'X-password': senha,
-    //     },
-    // };
-
     const resposta = await api.post("/auth/login", { email, senha });
-    console.log(resposta);
+    
     return resposta.data;
   } catch (error) {
     if (error.response) {

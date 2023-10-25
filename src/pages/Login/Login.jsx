@@ -6,6 +6,7 @@ import Button from "../../components/common/Button/Button";
 import { Link, useNavigate } from "react-router-dom";
 import { loginUsuario } from "../../service/api";
 import Textfield from "../../components/views/Textfield/Textfield";
+import { parseJwt } from "../../utils/utils";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -18,14 +19,13 @@ const Login = () => {
     const resposta = await loginUsuario(email, senha);
 
     if (resposta.token) {
-      localStorage.setItem("id", resposta.id_usuario);
-      console.log(resposta.id_usuario)
-      localStorage.setItem("token", resposta.token);
+      const idUsuario = parseJwt(resposta.token).id
+      localStorage.setItem("id", idUsuario);
+      localStorage.setItem("email", email);
       navigate("/VendasOnline");
     } else {
       setError(resposta.message);
     }
-    console.log(resposta);
   }
 
   return (
