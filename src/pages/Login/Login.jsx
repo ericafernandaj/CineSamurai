@@ -20,6 +20,7 @@ const Login = () => {
 
     if (resposta.token) {
       const idUsuario = parseJwt(resposta.token).id
+      localStorage.setItem("token", resposta.token);
       localStorage.setItem("id", idUsuario);
       localStorage.setItem("email", email);
       navigate("/VendasOnline");
