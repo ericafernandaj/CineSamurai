@@ -20,6 +20,7 @@ const Textfield = ({
           onChange={onChange}
           placeholder={placeholder}
           name={name}
+          id={name}
           type={type}
           required={required}
         />
