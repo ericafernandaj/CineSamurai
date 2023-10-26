@@ -50,7 +50,7 @@ const Cadastro = () => {
   }
 
   function validaSenha(senha, confirmaSenha) {
-    return senha.length > 7 && senha.length <= 12 && senha == confirmaSenha;
+    return senha.length >= 4 && senha == confirmaSenha;
   }
 
   const handleCadastro = async (e) => {
@@ -60,16 +60,12 @@ const Cadastro = () => {
       const body = {
         nome,
         email,
+        senha,
         cpf: cpf_usuario, //cpf AS cpf_usuario
         telefone,
       };
 
-      const resposta = await postUsuario({
-        nome,
-        email,
-        cpf: cpf_usuario, //cpf AS cpf_usuario
-        telefone
-      });
+      const resposta = await postUsuario(body);
 
       if (resposta) {
         localStorage.setItem("id", resposta.id_usuario);
@@ -80,7 +76,7 @@ const Cadastro = () => {
       }
     }
     else {
-      console.log("Verifique as informações");
+      console.log(validaNome(nome), validaEmail(email), validaSenha(senha, confirmaSenha), validaCPF(cpf_usuario), validaTelefone(telefone))
     }
   };
 

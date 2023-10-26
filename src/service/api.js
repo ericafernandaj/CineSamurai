@@ -22,9 +22,9 @@ export const loginUsuario = async (email, senha) => {
   }
 };
 
-export const postUsuario = async (body, senha) => {
+export const postUsuario = async (body) => {
   try {
-    const resposta = await api.post("/usuarios", { ...body, senha });
+    const resposta = await api.post("/usuarios", body);
     return resposta.data;
   } catch (error) {
     console.log(error.response);
