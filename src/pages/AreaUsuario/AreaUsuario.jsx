@@ -8,7 +8,6 @@ import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import Textfield from '../../components/views/Textfield/Textfield'
 
-
 const AreaUsuario = () => {
   const navigate = useNavigate()
   const [modalDelete, setModalDelete] = useState(false)
@@ -43,9 +42,8 @@ const AreaUsuario = () => {
     setModalDelete(true)
   }
 
-
   async function handleAtualizarUsuario(){
-    const resposta = await updateUsuario(id)
+    const resposta = await updateUsuario(id, nome, email, cpf, senha, telefone)
 
     if (resposta) {
       setModalUpdate(false)
@@ -65,10 +63,9 @@ const AreaUsuario = () => {
     getDadosUsuario()
     setModalUpdate(true)
   }
-
-
-      return (
-  <> 
+  
+  return (
+    <> 
     <HeaderLogado/>
     <StyleAreaUsuario>
         <Button 
@@ -156,10 +153,7 @@ const AreaUsuario = () => {
         <Button texto='Sair' variant='primary' onClick={clearLocalStorage}/>
     </StyleAreaUsuario>
     <Footer/>
-  </>
-   
-    
-   
+    </>
   )
 }
 

@@ -27,7 +27,7 @@ const Cadastro = () => {
       email.length > 11 &&
       email.includes("@") &&
       email.includes(".com") &&
-      (email.includes("gmail") || email.includes("hotmail") || email.includes("yahoo")) 
+      (email.includes("gmail") || email.includes("hotmail") || email.includes("yahoo"))
     );
   }
 
@@ -56,25 +56,29 @@ const Cadastro = () => {
   const handleCadastro = async (e) => {
     e.preventDefault();
 
-    if (validaNome && validaEmail && validaSenha && validaCPF && validaTelefone) {
-
+    if (validaNome(nome) && validaEmail(email) && validaSenha(senha, confirmaSenha) && validaCPF(cpf_usuario) && validaTelefone(telefone)) {
       const body = {
         nome,
         email,
         cpf: cpf_usuario, //cpf AS cpf_usuario
         telefone,
       };
-  
-      const resposta = await postUsuario(body, senha);
-      
-      if (resposta){
+
+      const resposta = await postUsuario({
+        nome,
+        email,
+        cpf: cpf_usuario, //cpf AS cpf_usuario
+        telefone
+      });
+
+      if (resposta) {
         localStorage.setItem("id", resposta.id_usuario);
         navigate("/Login");
       }
       else {
         console.log('Erro ao cadastrar usuário')
-      } 
-    } 
+      }
+    }
     else {
       console.log("Verifique as informações");
     }
@@ -157,7 +161,7 @@ const Cadastro = () => {
               variant="primary"
               onClick={handleCadastro}
             />
-            <Link to="/login" className="link-login">
+            <Link to="/Login" className="link-login">
               Já possuo cadastro.
             </Link>
           </div>
