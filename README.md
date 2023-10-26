@@ -39,54 +39,12 @@ Caso você já possua o Node instalado, faça a atualização dele utilizando o 
 npm install -g npm
 ```
 
-
 ### Como executar o projeto:
 
-#### Parte 1: Inicializando a aplicação back-end - API
+#### Parte 1: API
 
-
-* Passo 1: No terminal do seu computador faça o clone do repositório disponível neste [link](https://github.com/samuelkutz/CineSamuraiAPI-v2) utilizando o comando  
-```
-git clone https://github.com/samuelkutz/CineSamuraiAPI-v2.git
-```
-
-* Passo 2: No terminal do Visual Studio Code (ou IDE similar) entre no diretório do projeto 
-```
-cd CineSamuraiAPI-v2
-``` 
-
-* Passo 3: No terminal do Visual Studio Code (ou IDE similar) inicialize o Node.js utilizando o comando a seguir para que a pasta node-modules seja baixada
-``` 
-npm i 
-``` 
--> Documentação: [Node](https://docs.npmjs.com/cli/v9/commands/npm-init)
-
-* Passo 4: Adicione à raiz do projeto um arquivo nomeado como .env e dentro dele adicione o código abaixo
-```
-PORT="3000"
-DATABASE_URI="mongodb+srv://admin:sup9rXRwTPkppoLu@cinesamurai.hsmeuxb.mongodb.net/?retryWrites=true&w=majority"
-SECRET_JWT="64cd760a6f1b8327b9f9d8e262dd7a69"
-```
-
-* Passo 5: Execute o programa utilizando o comando 
-```
-npm run dev melior
-```
-
-* Exemplo de saída:
-```
-> cinesamuraiapi-v2@1.0.0 dev
-> nodemon ./app.js melior
-
-[nodemon] 3.0.1
-[nodemon] to restart at any time, enter `rs`
-[nodemon] watching path(s): *.*
-[nodemon] watching extensions: js,mjs,cjs,json
-[nodemon] starting `node ./app.js melior`
-Conectando ao banco de dados...
-Servidor rodando em http://localhost/3000
-Conectado ao MongoDB!
-```
+* A aplicação Back-end está hospedada no link abaixo: (*Disponível em breve*)
+[Link-render]()
 
 #### Parte 2: Inicializando a aplicação front-ent
 
