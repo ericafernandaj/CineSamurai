@@ -6,7 +6,7 @@ export const StyleQuemSomos = styled.div`
     flex-direction: column;
     align-items: center;
     border: solid white;
-    width: 70%;
+    width: 50%;
     margin: 80px auto;
     border: none;
     color: #f2f2f2;
@@ -30,13 +30,15 @@ export const StyleQuemSomos = styled.div`
     font-weight: 500;
     text-decoration: none;
     font-size: 2rem;
-    color: #fabd2b;
+    color: #d266ff;
+    text-align: center;
+    margin:7%;
   }
 
   h3 {
     font-size: 1.3rem;
-    color: #fabd2b;
-    margin: 1.5%;
+    color:#d266ff;
+    margin: 2%;
     text-align: center;
 
   }

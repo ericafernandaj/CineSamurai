@@ -19,8 +19,8 @@ const BannerQuemSomos = () => {
           </p>
         </div>
 
-        <h2>Nossa História </h2>
         <div>
+          <h2>Nossa História </h2>  
           <p>
             Tudo começou como um sonho compartilhado por cinco amigos que
             acreditavam que o entretenimento cinematográfico deveria ser
@@ -32,9 +32,10 @@ const BannerQuemSomos = () => {
           </p>
         </div>
 
-        <h2>Nossa Missão</h2>
+        
 
         <div>
+          <h2>Nossa Missão</h2>
           <h3>Facilitar o Acesso</h3>
           <p>
             Queremos simplificar o processo de assistir a um filme. Com nossa
