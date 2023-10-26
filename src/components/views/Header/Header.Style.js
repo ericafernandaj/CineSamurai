@@ -20,13 +20,13 @@ color: rgba(247,247,247,247);
 }
 
 .link{
-color:#fabd2b;
+color:#e9daf0;
 font-family: 'Roboto', sans-serif;
 font-weight: 500;
 /* font-family: 'Open Sans', sans-serif; */
 /* font-family: 'Work Sans', sans-serif; */
 text-decoration: none;
-font-size: 1.7rem;
+font-size: 2rem;
 
 }
 nav a{    
@@ -35,6 +35,7 @@ nav a{
 
 .link:hover{
     color:#d266ff;
-    transition:.3s;    
+    transition:.3s;
+
 }
 `

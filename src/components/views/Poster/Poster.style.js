@@ -44,6 +44,7 @@ strong{
 
 .tituloFilme{
     font-size:2rem;
-    color: #fabd2b;
+    color: #d266ff;
+    
 }
 `

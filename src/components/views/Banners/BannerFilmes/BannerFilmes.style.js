@@ -35,6 +35,8 @@ margin-top: 2%;
 
 .Botaoingresso button{
     margin-bottom: 3%;
+    background-color:#e9daf0;
+
 }
 
 .posterBox img:hover{    

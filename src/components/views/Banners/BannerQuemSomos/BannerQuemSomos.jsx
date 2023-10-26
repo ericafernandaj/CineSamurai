@@ -7,13 +7,16 @@ const BannerQuemSomos = () => {
         <h1>Quem Somos</h1>
 
         <div>
-          Bem-vindo ao Cinema Cine Samurai, sua porta de entrada para uma
-          experiência cinematográfica única e conveniente. Fundado por um grupo
-          de cinco amigos apaixonados por cinema e movidos pela vontade de
-          transformar a forma como as pessoas vivenciam filmes, tudo partiu de
-          uma simples ideia, proporcionar aos nossos clientes não apenas filmes
-          excepcionais, mas também uma maneira mais fácil e confortável de
-          assisti-los.
+          <p>
+            Bem-vindo ao Cinema Cine Samurai, sua porta de entrada para uma
+            experiência cinematográfica única e conveniente. Fundado por um grupo
+            de cinco amigos apaixonados por cinema e movidos pela vontade de
+            transformar a forma como as pessoas vivenciam filmes, tudo partiu de
+            uma simples ideia, proporcionar aos nossos clientes não apenas filmes
+            excepcionais, mas também uma maneira mais fácil e confortável de
+            assisti-los.
+
+          </p>
         </div>
 
         <h2>Nossa História </h2>

@@ -34,8 +34,14 @@ export const StyleQuemSomos = styled.div`
   }
 
   h3 {
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #fabd2b;
-    margin-top: 20px;
+    margin: 1.5%;
+    text-align: center;
+
+  }
+
+  p{
+    font-size: 1.4rem;
   }
 `;

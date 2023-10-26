@@ -5,4 +5,8 @@ export const StyleHome = styled.div`
   /* background-color:#101728; */
   gap: 5px;
   height: 100%;
+
+  button{
+    background-color:#e9daf0;
+  }
 `;
