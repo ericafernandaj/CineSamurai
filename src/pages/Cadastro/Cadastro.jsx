@@ -16,6 +16,7 @@ const Cadastro = () => {
   const [confirmaSenha, setConfirmaSenha] = useState("");
   const [cpf_usuario, setCPF] = useState("");
   const [telefone, setTelefone] = useState("");
+  const [erro, setErro] = useState( {status: false, message: ""} );
 
   function validaNome(nome) {
     return typeof nome == "string" && nome.length > 2;
@@ -72,11 +73,17 @@ const Cadastro = () => {
         navigate("/Login");
       }
       else {
-        console.log('Erro ao cadastrar usuário')
+        setErro({
+            status: true,
+            message: "Falha ao criar usuário"
+        })
       }
     }
     else {
-      console.log(validaNome(nome), validaEmail(email), validaSenha(senha, confirmaSenha), validaCPF(cpf_usuario), validaTelefone(telefone))
+      setErro({
+        status: true,
+        message: "Campos inválidos"
+      })
     }
   };
 
@@ -150,6 +157,8 @@ const Cadastro = () => {
               />
             </div>
           </form>
+
+          {erro.status && <div className="erro-input">{erro.message}</div>}
 
           <div className="div-cadastro">
             <Button

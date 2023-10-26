@@ -58,6 +58,7 @@ export const updateUsuario = async (id, nome, email, cpf, senha, telefone) => {
       senha,
       telefone,
     });
+    
     return resposta;
   } catch (error) {
     if (error.response) {
@@ -76,7 +77,6 @@ export const getUsuario = async (id) => {
   console.log(id);
   try {
     const resposta = await api.get(`/usuarios/${id}`);
-    console.log(resposta)
 
     return resposta;
   } catch (error) {
