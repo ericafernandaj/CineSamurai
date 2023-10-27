@@ -12,7 +12,7 @@ const Login = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
-  const [error, setError] = useState();
+  const [erro, setErro] = useState( {status: false, message: ""} );
 
   async function handleLogin(e) {
     e.preventDefault();
@@ -25,7 +25,10 @@ const Login = () => {
       localStorage.setItem("email", email);
       navigate("/VendasOnline");
     } else {
-      setError(resposta.message);
+      setErro({
+        status: true,
+        message: "Este usuário não está cadastrado"
+    })
     }
   }
 
@@ -56,7 +59,7 @@ const Login = () => {
                 value={senha}
                 onChange={(e) => setSenha(e)}
               />
-              {error && <p style={{ color: "#A3151A" }}>{error}</p>}
+              {erro.status && <div style={{ color: "#A3151A" }}>{erro.message}</div>}
               <Button
                 texto="Entrar"
                 variant="primary"
