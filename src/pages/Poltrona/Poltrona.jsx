@@ -5,11 +5,6 @@ import Button from '../../components/common/Button/Button'
 import { StylePoltrona } from "./poltrona.style"
 import { Link, useNavigate } from "react-router-dom";
 
-
-
-
-
-
 const Poltrona = () => {
   const navigate = useNavigate();
   const handleClick = () => {
