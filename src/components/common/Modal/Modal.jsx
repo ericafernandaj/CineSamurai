@@ -40,6 +40,7 @@ const StylesModal = styled.div`
   top: 0;
   left: 0;
   z-index: 9;
+  background: #263238ac;
 `;
 
 const StylesContentModal = styled.div`
