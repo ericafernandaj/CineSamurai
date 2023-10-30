@@ -82,10 +82,8 @@ export const updateUsuario = async (id, nome, email, cpf, senha, telefone) => {
 };
 
 export const getUsuario = async (id) => {
-  console.log(id);
   try {
     const resposta = await api.get(`/usuarios/${id}`);
-
     return resposta;
   } catch (error) {
     console.log(error.response);
@@ -100,3 +98,21 @@ export const getUsuario = async (id) => {
     }
   }
 };
+
+export const getFilmes = async () => {
+  try {
+    const resposta = await api.get("/filmes")
+    return resposta
+  } catch (error) {
+    console.log(error.response);
+    if (error.response) {
+      return {
+        message: error.response.message,
+      };
+    } else {
+      return {
+        message: "Erro inesperado",
+      };
+    }
+  }
+}
