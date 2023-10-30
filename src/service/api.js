@@ -50,14 +50,22 @@ export const deleteUsuario = async (id) => {
 
 export const updateUsuario = async (id, nome, email, cpf, senha, telefone) => {
   try {
-    const resposta = await api.patch(`/usuarios/${id}`, {
-      id,
+    let newUser = {
       nome,
       email,
       cpf,
       senha,
       telefone,
+    }
+
+    //this removes all undefined values from the user
+    Object.keys(newUser).forEach(key => {
+      if (!newUser[key]) {
+        delete newUser[key];
+      }
     });
+
+    const resposta = await api.patch(`/usuarios/${id}`, newUser);
     
     return resposta;
   } catch (error) {
