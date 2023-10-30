@@ -12,7 +12,7 @@ const Login = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
-  const [erro, setErro] = useState( {status: false, message: ""} );
+  const [erro, setErro] = useState({ status: false, message: "" });
 
   async function handleLogin(e) {
     e.preventDefault();
@@ -28,7 +28,7 @@ const Login = () => {
       setErro({
         status: true,
         message: "Este usuário não está cadastrado"
-    })
+      })
     }
   }
 

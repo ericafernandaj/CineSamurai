@@ -6,6 +6,13 @@ export const StyleIngresso = styled.div`
     align-items: center;    
     width: 100%;
 
+    .posterBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
     .bloco-ingresso p{
         color: #e9daf0;
         font-size: 1.5rem;

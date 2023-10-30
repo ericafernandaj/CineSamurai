@@ -8,7 +8,7 @@ import MeuCinema from "../../../public/cinema.svg"
 const Ingresso = () => {
     const poltronas = localStorage.getItem("poltronasSelecionadas")
     const email = localStorage.getItem("email")
-
+    const filme = localStorage.getItem("filme_snippet")
 
     return (
         <>
@@ -27,7 +27,6 @@ const Ingresso = () => {
                     <img src={MeuCinema} alt="fite de filme roxa" />
 
                 </picture>
-
             </StyleIngresso>
             <Footer />
         </>

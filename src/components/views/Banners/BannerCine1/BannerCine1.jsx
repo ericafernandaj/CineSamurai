@@ -37,46 +37,46 @@ const Bannercine1 = () => {
           >
             <table>
               <tbody>
-              <tr className="linha1">
-                <th>Dia da semana</th>
-                <th>Inteira</th>
-                <th>Meia</th>
-              </tr>
-              <tr>
-                <th>Segunda-feira</th>
-                <th>R$ 12,00</th>
-                <th>R$ 6,00</th>
-              </tr>
-              <tr>
-                <th>Terça-feira</th>
-                <th>R$ 15,00</th>
-                <th>R$ 7,50</th>
-              </tr>
-              <tr>
-                <th>Quarta-feira</th>
-                <th>R$ 15,00</th>
-                <th>R$ 7,50</th>
-              </tr>
-              <tr>
-                <th>Quinta-feira</th>
-                <th>R$ 16,00</th>
-                <th>R$ 8,00</th>
-              </tr>
-              <tr>
-                <th>Sexta-feira</th>
-                <th>R$ 26,00</th>
-                <th>R$ 13,00</th>
-              </tr>
-              <tr>
-                <th>Sábado</th>
-                <th>R$ 26,00</th>
-                <th>R$ 13,00</th>
-              </tr>
-              <tr>
-                <th>Domingo</th>
-                <th>R$ 26,00</th>
-                <th>R$ 13,00</th>
-              </tr>
+                <tr className="linha1">
+                  <th>Dia da semana</th>
+                  <th>Inteira</th>
+                  <th>Meia</th>
+                </tr>
+                <tr>
+                  <th>Segunda-feira</th>
+                  <th>R$ 12,00</th>
+                  <th>R$ 6,00</th>
+                </tr>
+                <tr>
+                  <th>Terça-feira</th>
+                  <th>R$ 15,00</th>
+                  <th>R$ 7,50</th>
+                </tr>
+                <tr>
+                  <th>Quarta-feira</th>
+                  <th>R$ 15,00</th>
+                  <th>R$ 7,50</th>
+                </tr>
+                <tr>
+                  <th>Quinta-feira</th>
+                  <th>R$ 16,00</th>
+                  <th>R$ 8,00</th>
+                </tr>
+                <tr>
+                  <th>Sexta-feira</th>
+                  <th>R$ 26,00</th>
+                  <th>R$ 13,00</th>
+                </tr>
+                <tr>
+                  <th>Sábado</th>
+                  <th>R$ 26,00</th>
+                  <th>R$ 13,00</th>
+                </tr>
+                <tr>
+                  <th>Domingo</th>
+                  <th>R$ 26,00</th>
+                  <th>R$ 13,00</th>
+                </tr>
               </tbody>
             </table>
           </Modal>
@@ -86,21 +86,24 @@ const Bannercine1 = () => {
           <h2>🎬Em Breve!</h2>
         </div>
       </section>
+
+
       <section className="posterBox">
         <Poster
           imagem={ImagemFreira}
           color={tema.white50}
           titulo="A Freira 2"
-          sinopse={`A Freira 2 é o segundo capítulo da história de A Freira (2018), 
+          sinopse={`
+                A Freira 2 é o segundo capítulo da história de A Freira (2018), 
                 que faz parte do universo da franquia Invocação do Mal. No primeiro filme, 
                 após uma freira cometer suicídio em um convento na Romênia, 
                 o Vaticano envia o atormentado Padre Burke (Demián Bichir) e uma noviça,
-                 Irmã Irene (Taissa Farmiga), para investigar o ocorrido. 
-                 Arriscando suas vidas, a fé e até suas almas, 
-                 os dois descobrem um segredo profano no local, 
-                 confrontando uma força do mal que assume a forma de uma freira demoníaca e transforma o convento em um campo de batalha espiritual. 
-                 Agora, na continuação, anos após os acontecimentos do primeiro filme, um padre é assassinado e parece que o mal está se espalhando por toda a região. 
-                 Novamente acompanhamos a Irmã Irene quando, após pensar ter escapado por pouco de Valak, a entidade demoníaca, ela é forçada a enfrentar o poderoso e macabro inimigo mais uma vez.
+                Irmã Irene (Taissa Farmiga), para investigar o ocorrido. 
+                Arriscando suas vidas, a fé e até suas almas, 
+                os dois descobrem um segredo profano no local, 
+                confrontando uma força do mal que assume a forma de uma freira demoníaca e transforma o convento em um campo de batalha espiritual. 
+                Agora, na continuação, anos após os acontecimentos do primeiro filme, um padre é assassinado e parece que o mal está se espalhando por toda a região. 
+                Novamente acompanhamos a Irmã Irene quando, após pensar ter escapado por pouco de Valak, a entidade demoníaca, ela é forçada a enfrentar o poderoso e macabro inimigo mais uma vez.
                 `}
           faixa={FaixaEtaria}
         />
@@ -108,13 +111,14 @@ const Bannercine1 = () => {
           imagem={Filme2}
           color={tema.white50}
           titulo="O Exorcista"
-          sinopse={`O Exorcista - O Devoto é a sequência do clássico de 1973 sobre uma menina de 12 anos que é possuída por uma misteriosa entidade demoníaca, 
+          sinopse={`
+                O Exorcista - O Devoto é a sequência do clássico de 1973 sobre uma menina de 12 anos que é possuída por uma misteriosa entidade demoníaca, 
                 forçando sua mãe a buscar a ajuda de dois padres para salvá-la. Nesta versão de 2023,
-                 desde a morte de sua esposa grávida em um terremoto no Haiti, 
-                 há 12 anos, Victor Fielding tem criado sua filha Angela sozinho. 
-                 Mas quando Angela e sua amiga Katherine desaparecem na floresta e retornam três dias depois sem memória do que aconteceu com elas, 
-                 isso desencadeia uma série de eventos que obrigará Victor a confrontar o mal e, 
-                 em seu terror e desespero, buscar a única pessoa viva que testemunhou algo parecido antes: Chris MacNeil. Baseado no best-seller de William Peter Blatty.`}
+                desde a morte de sua esposa grávida em um terremoto no Haiti, 
+                há 12 anos, Victor Fielding tem criado sua filha Angela sozinho. 
+                Mas quando Angela e sua amiga Katherine desaparecem na floresta e retornam três dias depois sem memória do que aconteceu com elas, 
+                isso desencadeia uma série de eventos que obrigará Victor a confrontar o mal e, 
+                em seu terror e desespero, buscar a única pessoa viva que testemunhou algo parecido antes: Chris MacNeil. Baseado no best-seller de William Peter Blatty.`}
           faixa={FaixaEtaria}
         />
         <Poster
@@ -136,23 +140,23 @@ const Bannercine1 = () => {
 
         <div>
           <div className="primeiroBloco">
-          <h2 className="tituloBloco">Quem Paga</h2>
-          <picture>
-            <img className="meia" src={Figurameia} alt="" />
-          </picture>
-          <h2>?</h2>
+            <h2 className="tituloBloco">Quem Paga</h2>
+            <picture>
+              <img className="meia" src={Figurameia} alt="" />
+            </picture>
+            <h2>?</h2>
+          </div>
+          <div className="segundoBloco">
+            <ul>
+              <li>👨🏻‍🎓 Estudantes</li>
+              <li>👵🏻 Idosos</li>
+              <li>👩🏻‍🏫 Professores</li>
+              <li>👨🏻‍🦽 Portadores de deficiência</li>
+              <li>🩸 Doador de sangue</li>
+            </ul>
+          </div>
         </div>
-        <div className="segundoBloco">
-          <ul>
-            <li>👨🏻‍🎓 Estudantes</li>
-            <li>👵🏻 Idosos</li>
-            <li>👩🏻‍🏫 Professores</li>
-            <li>👨🏻‍🦽 Portadores de deficiência</li>
-            <li>🩸 Doador de sangue</li>
-          </ul>
-        </div>
-        </div>
-        
+
       </section>
     </StyleBannerCine1>
   );

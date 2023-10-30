@@ -56,6 +56,8 @@ const AreaUsuario = () => {
 
   async function getDadosUsuario(){
     const resposta = await getUsuario(id)
+
+    return resposta
   }
   
   function handleAbrirModalUpdate() {
