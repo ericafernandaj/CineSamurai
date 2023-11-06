@@ -7,7 +7,7 @@ import Filme3 from "/filmeCachorro.jpg";
 import Poster from "../../Poster/Poster";
 import figurapromo from "/figurapromocao.png";
 import Figurameia from "/meia.svg";
-import FaixaEtaria from "/FaixaEtaria.svg";
+import FaixaEtaria from "/faixaEtaria.svg";
 import { useNavigate } from "react-router-dom";
 import Modal from "../../../common/Modal/Modal";
 import { useState } from "react";
