@@ -7,6 +7,7 @@ import { getFilmes } from "../../../../service/api";
 import { useState } from "react";
 import { useEffect } from "react";
 import Faixaetaria16 from "../../../../../public/faixaEtaria.svg"
+import { StyleSpinner } from "../../../common/Spinner/Spinner.style";
 
 
 const BannerFilmes = () => {
@@ -38,7 +39,8 @@ const BannerFilmes = () => {
 
             </section>
 
-            {filmes.map(filme => {
+            {filmes.length > 0 ?
+            filmes.map(filme => {
                 return (
                     <>
                         <section className="posterBox" >
@@ -59,7 +61,10 @@ const BannerFilmes = () => {
                         </section>
                     </>
                 )
-            })}
+            })
+            :
+            <StyleSpinner></StyleSpinner>
+        }
         </StyleFilmes>
     )
 }
