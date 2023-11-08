@@ -3,10 +3,20 @@ Projeto em grupo do Módulo 5 -> Criação de um website que simula a compra de 
 
 **Sobre**: A ferramenta foi desenvolvida utilizando o Node.js, versão 18.17.1, o framework React+Vite, versão 18.2.0 e 4.4.11, respectivamente, e o MongoDB, versão , para construção da api. O objetivo deste projeto é permitir que os usuários possam visualizar e comprar ingressos para os filmes disponíveis no cinema fictício CineSamurai. 
 
+**Descrição do projeto**: A plataforma criada é dividida em três áreas. A primeira área pode ser acessada por qualquer usuário, mesmo que este não esteja logado, sendo possível visualizar os filmes que estarão em cartaz em breve e os que estão atualmente, bem como a sinopse e classificação indicativa desses, os valores do ingresso conforme os dias da semana, informações sobre o CineSamurai na página 'Quem Somos' e as páginas de Login e Cadastro.
+
+As segunda e terceira áreas somente podem ser acessadas pelo usuário logado. Assim, a segunda área trata-se da compra de ingressos a partir do filme escolhido (o fluxo de compra está descrito abaixo no título 'Funcionalidades: Compra de Ingressos'). Já a terceira refere-se a área Minha Conta, no qual o usuário pode alterar suas informações, excluir e sair da sua conta.
+
 [Documentação-ViteJs](https://vitejs.dev/guide/)
 [Documentação-React](https://pt-br.react.dev/learn)
 [Documentação-MongoDB](https://www.mongodb.com/docs/)
 [Link-API-CineSamurai](https://github.com/samuelkutz/CineSamuraiAPI-v2)
+
+### Contexto:
+
+Este projeto foi desenvolvido com o intuito de resolver um problema fictício, definido como: Um empreendedor decidiu investir na construção de um cinema, chamado CineSamurai, em uma cidade do interior, em poucos meses seu empreendimento começou a crescer e o empreendedor percebeu que era necessário investir em facilidades para seus clientes. O site antigo do CineSamurai somente permitia visualizar os filmes em cartaz, então nossa equipe foi contratada para reestruturar o site, permitindo ao usuário novas funcionalidades como a compra de ingressos online. Tais funcionalidades estão descritas abaixo.
+
+
 
 
 #### Funcionalidade: Compra de ingressos
