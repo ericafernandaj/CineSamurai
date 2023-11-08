@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:3000",
+  baseURL: "https://cinesamuraiapi-v2-lucasrls98.onrender.com",
 });
 
 export const loginUsuario = async (email, senha) => {
