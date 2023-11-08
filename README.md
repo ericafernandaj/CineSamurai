@@ -81,8 +81,10 @@ npm install -g npm
 
 #### Parte 1: API
 
-* A aplicação Back-end está hospedada no link abaixo: (*Disponível em breve*)
-[Link-render]()
+* A aplicação Back-end está disponível pelo link: (CineSamuraiAPI-v2)
+[https://github.com/samuelkutz/CineSamuraiAPI-v2]
+
+* Para executar o servidor, basta seguir as instruções no link acima.
 
 #### Parte 2: Inicializando a aplicação front-ent
 
