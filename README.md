@@ -8,6 +8,44 @@ Projeto em grupo do Módulo 5 -> Criação de um website que simula a compra de 
 [Documentação-MongoDB](https://www.mongodb.com/docs/)
 [Link-API-CineSamurai](https://github.com/samuelkutz/CineSamuraiAPI-v2)
 
+
+#### Funcionalidade: Compra de ingressos
+
+As etapas abaixo tratam-se do fluxo de compra de ingressos. 
+
+* Etapa 1: Escolha do filme
+<img src="/src/assets/comprarIngresso.png"> 
+* A página Filmes permite que o usuário selecione o filme desejado a partir dos botões 'Comprar Ingresso' dispostos em cada um dos filmes em cartaz.
+
+* Etapa 2: Login
+<img src= "/src/assets/login.png">
+<img src= "/src/assets/cadastrar.png">
+* A página de Login permite que o usuário entre com seu e-mail e senha. Já a página Cadastro, é destinada para novos usuários que desejam se cadastrar.
+* A partir da etapa 1, o usuário é direcionado para a área de Login e somente conseguirá realizar a compra do ingresso caso possua uma conta.
+
+* Etapa 3: Escolha de data, hora, quantidade de ingresso e preço.
+<img src= "/src/assets/comprarIngresso.png">
+* A página VendasOnline possibilita a escolha do dia, horário e quantidade de ingressos a serem comprados.
+* Após o Login, o usuário é direcionado para esta página.
+
+* Etapa 4: Poltronas
+<img src= "/src/assets/poltrona.png">
+* A página Poltronas permite a escolha das poltronas conforme a quantidade de ingressos selecionados na etapa 3.
+* O usuário é direcionado para esta página após clicar no botão 'Continuar da etapa 3.
+
+* Etapa 5: Bilhete
+<img src= "/src/assets/bilhete.png">
+* A página Ingresso, de caráter informativo, mostra ao usuário as poltronas escolhidas por ele e onde encontrar os   bilhetes comprados.
+
+#### Funcionalidade: Ações do usuário 
+A página MinhaConta permite que o usuário faça as seguintes ações a partir dos botões: 
+* 'Editar informações': altere suas informações de cadastro.
+* 'Excluir conta': Exclua suas informações do banco de dados.
+* 'Sair': Deslogue seu usuário.
+<img src= "/src/assets/minhaConta.png">
+<img src= "/src/assets/editar.png">
+<img src= "/src/assets/excluir.png"
+
 ### Bibliotecas Instaladas
 
 * react-router-dom@6 -> Usada para gerenciar a navegação e as rotas em aplicativos da web React. Oferece roteamento declarativo, gestão de histórico e passagem de parâmetros pela URL.
@@ -79,3 +117,6 @@ Exemplo de saída:
   ➜  Network: use --host to expose
   ➜  press h to show help
 ```
+
+## Para navegar no Site ultizando vercel
+(https://cine-samurai.vercel.app/)
