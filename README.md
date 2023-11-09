@@ -131,4 +131,4 @@ Exemplo de saída:
 ```
 
 ## Para navegar no Site ultizando vercel
-(https://cine-samurai.vercel.app/)
+(https://cine-samurai-codigos.vercel.app/)
